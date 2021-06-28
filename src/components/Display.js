@@ -4,7 +4,8 @@ import {View, Text, StyleSheet} from 'react-native'
 export default (props) => {
     return(
         <View style={styles.display}>
-            <Text>
+            <Text style={styles.displayValue}>
+                {props.value}
             </Text>
         </View>
 
@@ -18,5 +19,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(0,0,0,0.6)',
         alignItems: 'flex-end'
     },
-
+    displayValue: {
+       fontSize:60,
+       color: '#fff'
+    }
 })
